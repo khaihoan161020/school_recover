@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js" integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./wow.min.js"></script>
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="container-header flex nav-header">
+            <div class="logo">
+                <h1>Brandname</h1>
+            </div>
+            <div class="flex justify-between nav-header w-100 " id="menu">
+                <ul class="list-item main-menu">
+                    <li class="item">
+                        <a href="#" class="item-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item-link">
+                            Product
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item-link">
+                            Price
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="item-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="log-website">
+                    <a href="#" class="login">
+                        login
+                    </a>
+                    <a href="#" class="join-us btn btn-primary">
+                        join us
+                        <img src="./assets/arrow-right.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger-container">
+                <ul class="hamburger">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container wrap-header">
+            <div class="flex">
+                <div class="header-info">
+                    <span>join us</span>
+                    <h1 class="animate__animated animate__bounceInLeft">
+                        25k+ students trust us
+                    </h1>
+                    <p class="animate__animated animate__bounceInRight">
+                        Every day brings with it a fresh set of learning possibilities.
+                    </p>
+                    <div class="list-btn">
+                        <a href="#" class="btn btn-primary animate__animated animate__fadeInBottomLeft">
+                            get quote now
+                        </a>
+                        <a href="#" class="btn btn-default animate__animated animate__fadeInBottomRight">
+                            learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="thumbnail">
+                    </div>
+                    <div class="img-header"></div>
+                    <div class="vector"></div>
+                    <div class="vector-1"></div>
+                </div>
+            </div>
+
+            <div class="list-card flex justify-between">
+                <div class="card-item ">
+                    <div class="wrap-icon">
+                        <div class="icon" style="background-image: url('./assets/cool-icon.svg');"></div>
+                    </div>
+                    <h3>Expert instruction</h3>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </div>
+                <div class="card-item ">
+                    <div class="wrap-icon">
+                        <div class="icon" style="background-image: url('./assets/bag-icon.svg');"></div>
+                    </div>
+                    <h3>Training Courses</h3>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </div>
+                <div class=" card-item  ">
+                    <div class="wrap-icon ">
+                        <div class="icon " style="background-image: url('./assets/book-icon.svg');"></div>
+                    </div>
+                    <h3>Expert instruction</h3>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="starts">
+        <div class="container">
+            <div class="flex list-start" id="unique-id">
+                <div class="start-item " id="waypoint">
+                    <h4 class="counter" id="counter1">
+                        15k
+                    </h4>
+                    <p>
+                        Happy Customers
+                    </p>
+                </div>
+                <div class="start-item">
+                    <h4 id="myTargetElement">150k</h4>
+                    <p>
+                        Monthly Visitors
+                    </p>
+                </div>
+                <div class="start-item">
+                    <h4>15</h4>
+                    <p>
+                        Countries Worldwide
+                    </p>
+                </div>
+                <div class="start-item">
+                    <h4>100+</h4>
+                    <p>
+                        Top Partners
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container client-matter flex">
+            <div class="client-info wow animate__animated animate__slideInLeft">
+                <div class="wrap">
+                    <h3>Every Client Matters</h3>
+                    <p>
+                        Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                    </p>
+                    <a href="" class="btn btn-link">
+                        learn more
+                        <img src="./assets/arrow-next.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="client-right wow animate__animated animate__slideInRight">
+                <div class="client-img">
+                    <img src="./assets/baby.svg" alt="">
+                </div>
+                <div class="client-rectangle"></div>
+                <div class="client-table">
+                    <img src="./assets/table-block2.svg" alt="">
+                </div>
+                <div class="client-chart">
+                    <img src="./assets/chart.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="course wow animate__animated animate__fadeInUp">
+        <div class="container">
+            <div class="about-us">
+                <span>Practice Advice</span>
+                <h3>
+                    Our Experts Teacher
+                </h3>
+                <p>
+                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="list-courses flex justify-between">
+                <div class="course-item ">
+                    <span>sale</span>
+                    <div class="course-img">
+                        <div class="img" style="background-image: url('./assets/product-1.svg');"></div>
+                        <div class="course-feature flex">
+                            <a href="#">
+                                <img src="./assets/heart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/cart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/eye-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="star">
+                            <img src="./assets/start.svg" alt="">
+                            <div>4.9</div>
+                        </div>
+                        <span>Training Courses</span>
+                        <h3>Get Quality Education</h3>
+                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        <a href="#">
+                            <img src="./assets/down-icon.svg" alt="">
+                            <span>
+                                15 sales
+                            </span>
+                        </a>
+                        <div class="prices">
+                            <span class="price">$16.48</span>
+                            <span class="price-sale">$6.48</span>
+                        </div>
+                        <a href="#" class="btn btn-default">
+                            learn more
+                            <img src="./assets/arrow-next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="course-item   ">
+                    <span>sale</span>
+                    <div class="course-img">
+                        <div class="img" style="background-image: url('./assets/product-2.svg');"></div>
+                        <div class="course-feature flex">
+                            <a href="#">
+                                <img src="./assets/heart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/cart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/eye-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="star">
+                            <img src="./assets/start.svg" alt="">
+                            <div>4.9</div>
+                        </div>
+                        <span>Training Courses</span>
+                        <h3>Get Quality Education</h3>
+                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        <a href="#">
+                            <img src="./assets/down-icon.svg" alt="">
+                            <span>
+                                15 sales
+                            </span>
+                        </a>
+                        <div class="prices">
+                            <span class="price">$16.48</span>
+                            <span class="price-sale">$6.48</span>
+                        </div>
+                        <a href="#" class="btn btn-default">
+                            learn more
+                            <img src="./assets/arrow-next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="course-item ">
+                    <span>sale</span>
+                    <div class="course-img">
+                        <div class="img" style="background-image: url('./assets/product-3.svg');"></div>
+                        <div class="course-feature flex">
+                            <a href="#">
+                                <img src="./assets/heart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/cart-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/eye-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="star">
+                            <img src="./assets/start.svg" alt="">
+                            <div>4.9</div>
+                        </div>
+                        <span>Training Courses</span>
+                        <h3>Get Quality Education</h3>
+                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        <a href="#">
+                            <img src="./assets/down-icon.svg" alt="">
+                            <span>
+                                15 sales
+                            </span>
+                        </a>
+                        <div class="prices">
+                            <span class="price">$16.48</span>
+                            <span class="price-sale">$6.48</span>
+                        </div>
+                        <a href="#" class="btn btn-default">
+                            learn more
+                            <img src="./assets/arrow-next.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="expert wow animate__animated animate__fadeInUpBig">
+        <div class="container">
+            <div class="about-us">
+                <span>Practice Advice</span>
+                <h3>
+                    Our Experts Teacher
+                </h3>
+                <p>
+                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="list-experts flex">
+                <div class="expert-card">
+                    <div class="expert-star">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/start-line.svg" alt="">
+                    </div>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                    </p>
+                    <div class="flex profile">
+                        <div class="avt" style="background-image: url('./assets/exp-1.svg');"></div>
+                        <div class="info">
+                            <h4>Regina Miles</h4>
+                            <span>Designer</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-star">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/start-line.svg" alt="">
+                    </div>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                    </p>
+                    <div class="flex profile">
+                        <div class="avt" style="background-image: url('./assets/exp-2.svg');"></div>
+                        <div class="info">
+                            <h4>Regina Miles</h4>
+                            <span>Designer</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-star">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/star-fill.svg" alt="">
+                        <img src="./assets/start-line.svg" alt="">
+                    </div>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+                    </p>
+                    <div class="flex profile">
+                        <div class="avt" style="background-image: url('./assets/exp-3.svg');"></div>
+                        <div class="info">
+                            <h4>Regina Miles</h4>
+                            <span>Designer</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="profesion wow animate__animated animate__fadeInLeft">
+        <div class="container">
+            <div class="about-us">
+                <span>Team</span>
+                <h3>
+                    Our Popular Courses
+                </h3>
+                <p>
+                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="flex list-profesion">
+                <div class="item">
+                    <div class="img" style="background-image: url('./assets/avt-1.svg');"></div>
+                    <div class="info">
+                        <h3>Julian Jameson</h3>
+                        <p>Profession</p>
+                        <div class="link-social">
+                            <a href="#">
+                                <img src="./assets/fb-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/ins-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/twitter-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img" style="background-image: url('./assets/avt-2.svg');"></div>
+                    <div class="info">
+                        <h3>Julian Jameson</h3>
+                        <p>Profession</p>
+                        <div class="link-social">
+                            <a href="#">
+                                <img src="./assets/fb-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/ins-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/twitter-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img" style="background-image: url('./assets/avt-3.svg');"></div>
+                    <div class="info">
+                        <h3>Julian Jameson</h3>
+                        <p>Profession</p>
+                        <div class="link-social">
+                            <a href="#">
+                                <img src="./assets/fb-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/ins-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/twitter-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img" style="background-image: url('./assets/avt-4.svg');"></div>
+                    <div class="info">
+                        <h3>Julian Jameson</h3>
+                        <p>Profession</p>
+                        <div class="link-social">
+                            <a href="#">
+                                <img src="./assets/fb-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/ins-icon.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/twitter-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact wow animate__animated animate__fadeInRight ">
+        <div class="container">
+            <span>Newsletter</span>
+            <h3>Watch our Courses</h3>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+            <form class="contact-form">
+                <div class="wrap-input">
+                    <input type="email">
+                    <a href="#" class="btn btn-primary">Subscribe</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="footer wow animate__animated animate__fadeInUp ">
+        <div class="container flex">
+            <div class="col-1">
+                <ul class="list-item">
+                    <li class="item">
+                        <a href="#">Company Info</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Carrier</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">We are hiring</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="list-item">
+                    <li class="item">
+                        <a href="#">Legal</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Carrier</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">We are hiring</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="list-item">
+                    <li class="item">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Carrier</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">We are hiring</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="list-item">
+                    <li class="item">
+                        <a href="#">Resources</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Carrier</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">We are hiring</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="list-item">
+                    <li class="item">
+                        <a href="#">Get In Touch</a>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/phone.svg" alt="">
+                        <span>(480) 555-0103</span>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/address.svg" alt="">
+                        <span>4517 Washington Ave. Manchester,
+                            Kentucky 39495</span>
+                    </li>
+                    <li class="item">
+                        <img src="./assets/email.svg" alt="">
+                        <span>debra.holt@example.com</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="water-mark">
+        <div class="container flex">
+            <p>Made With Love By Figmaland All Right Reserved </p>
+            <div class="link-list">
+                <a href="#">
+                    <img src="./assets/fb-icon.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/ins-icon.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/twitter-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <!-- <script src="./countUp.min.js" defer></script> -->
+    <script>
+        new WOW().init();
+        const options = {
+            startVal: 7051,
+        };
+        let demo = new CountUp('myTargetElement', 0, options);
+        if (!demo.error) {
+            demo.start();
+        } else {
+            console.error(demo.error);
+        }
+        var aaa = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
+    </script>
+</body>
+
+</html>
