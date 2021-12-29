@@ -1143,6 +1143,7 @@ a {
     }
     .list-courses {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .course-item {
         width: calc(100% / 2 - 15px);
@@ -1253,11 +1254,29 @@ a {
         width: calc(100% / 2 - 15px);
         margin: 10px 0;
     }
+    .list-profesion .item {
+        width: calc(100% / 2 - 15px);
+    }
     .footer .col-1 {
         width: calc(100% / 3);
     }
     .footer .col-2 {
         width: calc(100% * 2 / 3 - 10px);
+    }
+    .water-mark .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .water-mark .container p {
+        text-align: center;
+    }
+    .water-mark .link-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .water-mark .link-list a {
+        display: inline-block;
     }
 }
 
@@ -1294,6 +1313,12 @@ a {
         flex-wrap: wrap;
         padding: 40px 0;
     }
+    .hamburger-container {
+        width: 38px;
+        margin: 1.2em 0.8em;
+        height: 30px;
+        cursor: pointer;
+    }
     .header-info h1 {
         font-size: 32px;
         line-height: 40px;
@@ -1303,6 +1328,37 @@ a {
     .container .list-start .start-item {
         width: calc(100% - 15px);
         margin: 15px 0;
+    }
+    /*  */
+    .client-info h3 {
+        text-align: center;
+        padding: 12px;
+    }
+    .client-info p {
+        padding: 12px 0;
+        text-align: center;
+    }
+    .client-info .btn-link {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    /*  */
+    .about-us span {
+        display: table;
+        margin: 0 auto;
+    }
+    .about-us h3 {
+        text-align: center;
+        font-weight: bold;
+        color: var(--text);
+        font-size: 30px;
+        line-height: 40px;
+        padding: 10px 0;
+    }
+    .about-us p {
+        padding-bottom: 20px;
+        text-align: center;
     }
     .course-item {
         width: calc(100% - 15px);
@@ -1316,8 +1372,13 @@ a {
         width: calc(100% - 15px);
         margin: 20px 0;
     }
+    .list-profesion .item:nth-child(1),
+    .list-profesion .item:nth-child(2) {
+        margin-bottom: unset;
+    }
     .list-profesion .item {
         width: calc(100% - 45px);
+        margin-top: 20px;
     }
     .footer .col-1 {
         width: calc(100% / 2);
@@ -1335,6 +1396,10 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
+    .container-header,
+    .container {
+        width: 95%;
+    }
     .about-us h3 {
         font-weight: bold;
         color: var(--text);
@@ -1342,10 +1407,50 @@ a {
         line-height: 40px;
         padding: 10px 0;
     }
+    .list-profesion {
+        padding-bottom: 0px;
+        justify-content: center;
+    }
     .contact-form .wrap-input {
         display: flex;
         width: 100%;
         flex-direction: column;
+    }
+    .wrap-header .thumbnail {
+        width: 100%;
+        height: 360px;
+        position: sticky;
+        margin: 0 auto;
+    }
+    .wrap-header .img-header {
+        width: 280px;
+        height: 280px;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrap-header .vector {
+        width: 250px;
+        height: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrap-header .vector-1 {
+        width: 250px;
+        height: 280px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header .list-btn a {
+        display: inline-block;
+        width: 100%;
+    }
+    .course-info .btn-default {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
 }
 
